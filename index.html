@@ -73,6 +73,21 @@
             color:#000;
             transform:translateY(-4px);
         }
+        .profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #58a6ff;
+    box-shadow:0 0 30px rgba(88,166,255,.6);
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 40px rgba(88,166,255,.9);
+}
 
         ul{
             padding-left:20px;
@@ -131,10 +146,16 @@
 <body>
 
 <header>
-    <h1>Hi, I'm Krishan Kumar 👋</h1>
-    <p>B.Tech (3rd Year) | Software Developer | Problem Solver</p>
-</header>
 
+    <img src="profile.jpg" alt="Krishan Kumar" class="profile-img">
+
+    <h1>Hi, I'm Krishan Kumar 👋</h1>
+
+    <p>
+        B.Tech (3rd Year) | Software Developer | Problem Solver
+    </p>
+
+</header>
 <div class="container">
 
 <section>
